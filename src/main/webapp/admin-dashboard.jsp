@@ -96,7 +96,7 @@
                     <div class="card text-white bg-secondary shadow-sm">
                         <div class="card-body">
                             <h6>Total Fine Amount Collected/Recorded</h6>
-                            <h3>&#8377; <%= request.getAttribute("totalFineAmount") %></h3>
+                            <h3>&#8377; <%= String.format("%,.0f", ((Number) request.getAttribute("totalFineAmount")).doubleValue()) %></h3>
                         </div>
                     </div>
                 </div>
